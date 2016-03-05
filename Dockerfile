@@ -8,4 +8,4 @@ COPY src/package.json /src/package.json
 RUN cd /src; npm install
 COPY src/server.express.js /src
 EXPOSE 3000
-CMD ["/usr/bin/node" "/src/server.express.js"]
+CMD ["nodejs" "/src/server.express.js"]
